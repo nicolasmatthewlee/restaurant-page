@@ -49,13 +49,55 @@ menu_bar.appendChild(menu_button);
 menu_bar.appendChild(contact_button);
 
 /*
+* overflow menu
+*/
+
+let overflow_menu = document.createElement('div');
+overflow_menu.setAttribute('class','overflow-menu')
+header.appendChild(overflow_menu);
+
+let overflow_menu_button_open = document.createElement('button');
+overflow_menu_button_open.setAttribute('class','overflow-menu-button-open');
+overflow_menu_button_open.textContent='M';
+overflow_menu_button_open.addEventListener('click',() => overflow_menu.classList.add('active'));
+header.appendChild(overflow_menu_button_open);
+
+let overflow_menu_button_close = document.createElement('button');
+overflow_menu_button_close.setAttribute('class','overflow-menu-button-close');
+overflow_menu_button_close.textContent='X';
+overflow_menu_button_close.addEventListener('click',() => overflow_menu.classList.remove('active'));
+overflow_menu.appendChild(overflow_menu_button_close);
+
+let overflow_menu_button_home = document.createElement('button');
+let overflow_menu_button_menu = document.createElement('button');
+let overflow_menu_button_contact = document.createElement('button');
+
+overflow_menu_button_home.setAttribute('class','overflow-menu-button-home');
+overflow_menu_button_menu.setAttribute('class','overflow-menu-button-menu');
+overflow_menu_button_contact.setAttribute('class','overflow-menu-button-contact');
+
+overflow_menu_button_home.textContent='home';
+overflow_menu_button_menu.textContent='menu';
+overflow_menu_button_contact.textContent='contact';
+
+overflow_menu_button_home.addEventListener('click',() => {
+    overflow_menu.classList.remove('active');
+    display_home();});
+overflow_menu_button_menu.addEventListener('click',() => {
+    overflow_menu.classList.remove('active');
+    display_menu();});
+overflow_menu_button_contact.addEventListener('click',() => {
+    overflow_menu.classList.remove('active');
+    display_contact();});
+
+overflow_menu.appendChild(overflow_menu_button_home);
+overflow_menu.appendChild(overflow_menu_button_menu);
+overflow_menu.appendChild(overflow_menu_button_contact);
+
+/*
 * main content
 */
 
 let content = document.createElement('div');
 content.setAttribute('class','main-content')
 body.appendChild(content);
-
-
-// RESUME HERE
-// add spacer to complete header !!!

@@ -2,6 +2,10 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*
+* header
+*/
+
 .header {
     height: 100px;
     width: 100vw;
@@ -13,7 +17,7 @@ body {
 }
 
 .company-name {
-    font-size: clamp(0px,9vw,50px);
+    font-size: clamp(0px,8vw,50px);
     font-weight: 800;
     white-space: nowrap;
     color: white;
@@ -26,6 +30,10 @@ body {
 .header-spacer {
     flex: 1;
 }
+
+/*
+* menu bar
+*/
 
 .menu-bar {
     display: flex;
@@ -46,19 +54,103 @@ body {
     border: none;
 }
 
-.menu-bar>button:hover {
+.menu-bar>button:hover, .overflow-menu-button-open:hover {
     color: rgb(180, 0, 0);
 }
 
-.menu-bar>button:active {
+.menu-bar>button:active, .overflow-menu-button-open:active {
     color: darkred;
 }
 
-.content-container {
-    background-color: blue;
-    height: 200px;
-    width: 100vw;
+/*
+* overflow menu
+*/
+
+.overflow-menu-button-open {
+    visibility: hidden;
+    position: absolute;
+    right: 30px;
+
+    height: 50px;
+    width: 50px;
+
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+
+    background-color: red;
+    border: none;
 }
+
+.overflow-menu-button-close {
+    height: 50px;
+    width: 50px;
+
+    font-size: 40px;
+    font-weight: 800;
+    color: lightgray;
+
+    background-color: white;
+    border: none;
+}
+
+.overflow-menu-button-close:hover {
+    color: darkgray;
+}
+
+.overflow-menu-button-close:active {
+    color: rgb(129, 129, 129);
+}
+
+.overflow-menu {
+    visibility: hidden;
+
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: -1px 0px 5px darkgray;
+}
+
+.overflow-menu.active {
+    visibility: visible;
+}
+
+.overflow-menu-button-home, .overflow-menu-button-menu, .overflow-menu-button-contact {
+    height: 50px;
+    
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+
+    background-color: white;
+    border: none;
+    padding-left: 20px;
+}
+
+.overflow-menu-button-home:hover, .overflow-menu-button-menu:hover, .overflow-menu-button-contact:hover {
+    background-color: red;
+    color: white;
+}
+
+.overflow-menu-button-home:active, .overflow-menu-button-menu:active, .overflow-menu-button-contact:active {
+    background-color: darkred;
+}
+
+/*
+* main content
+*/
+
+/*
+* dynamic resizing
+*/
 
 @media screen and (max-width: 780px) {
     .menu-bar {
@@ -66,6 +158,9 @@ body {
     }
     .header-spacer {
         display: none;
+    }
+    .overflow-menu-button-open {
+        visibility: visible;
     }
 
 }
