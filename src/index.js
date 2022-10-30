@@ -20,6 +20,10 @@ company_name.setAttribute('class','company-name');
 company_name.textContent='Rockefeller\'s Diner';
 header.appendChild(company_name);
 
+let header_spacer = document.createElement('div');
+header_spacer.setAttribute('class','header-spacer');
+header.appendChild(header_spacer);
+
 /*
 * menu bar
 */
@@ -51,3 +55,7 @@ menu_bar.appendChild(contact_button);
 let content = document.createElement('div');
 content.setAttribute('class','main-content')
 body.appendChild(content);
+
+
+// RESUME HERE
+// add spacer to complete header !!!
