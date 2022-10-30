@@ -1,12 +1,12 @@
 
-let display_menu = () => {
+let display_home = () => {
     
     /*
     * create menu content
     */
 
-    let menu_content_container = document.createElement('div');
-    menu_content_container.textContent='Menu';
+    let home_content_container = document.createElement('div');
+    home_content_container.textContent='Home';
 
     /*
     * 1. clear <content-container>
@@ -17,8 +17,8 @@ let display_menu = () => {
     while (content.firstChild) {
         content.firstChild.remove()
     }
-    content.appendChild(menu_content_container);
+    content.appendChild(home_content_container);
 
 }
 
-export {display_menu};
+export {display_home};

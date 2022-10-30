@@ -1,12 +1,12 @@
 
-let display_menu = () => {
+let display_contact = () => {
     
     /*
     * create menu content
     */
 
-    let menu_content_container = document.createElement('div');
-    menu_content_container.textContent='Menu';
+    let contact_content_container = document.createElement('div');
+    contact_content_container.textContent='Contact';
 
     /*
     * 1. clear <content-container>
@@ -17,8 +17,8 @@ let display_menu = () => {
     while (content.firstChild) {
         content.firstChild.remove()
     }
-    content.appendChild(menu_content_container);
+    content.appendChild(contact_content_container);
 
 }
 
-export {display_menu};
+export {display_contact};
