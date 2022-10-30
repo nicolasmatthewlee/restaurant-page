@@ -1,6 +1,8 @@
 import './reset.css';
 import './style.css';
 
+import MENU_ICON from './menu.svg'
+
 import { display_menu } from './menu';
 import { display_contact } from './contact';
 import { display_home } from './home';
@@ -58,7 +60,10 @@ header.appendChild(overflow_menu);
 
 let overflow_menu_button_open = document.createElement('button');
 overflow_menu_button_open.setAttribute('class','overflow-menu-button-open');
-overflow_menu_button_open.textContent='M';
+let overflow_menu_button_open_icon = new Image();
+overflow_menu_button_open_icon.setAttribute('class','overflow-menu-button-open-icon');
+overflow_menu_button_open_icon.src = MENU_ICON;
+overflow_menu_button_open.appendChild(overflow_menu_button_open_icon);
 overflow_menu_button_open.addEventListener('click',() => overflow_menu.classList.add('active'));
 header.appendChild(overflow_menu_button_open);
 
