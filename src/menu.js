@@ -1,6 +1,6 @@
 
 let display_menu = () => {
-    
+
     /*
     * create menu content
     */
@@ -13,7 +13,7 @@ let display_menu = () => {
     * 2. add to <content-container>
     */
 
-    let content = document.querySelector('.content-container');
+    let content = document.querySelector('.main-content');
     while (content.firstChild) {
         content.firstChild.remove()
     }

@@ -5,14 +5,28 @@ import { display_menu } from './menu';
 import { display_contact } from './contact';
 import { display_home } from './home';
 
+let body = document.querySelector('body');
+
+/*
+* header
+*/ 
+
+let header = document.createElement('div');
+header.setAttribute('class','header')
+body.appendChild(header);
+
+let company_name = document.createElement('div');
+company_name.setAttribute('class','company-name');
+company_name.textContent='Rockefeller\'s Diner';
+header.appendChild(company_name);
+
 /*
 * menu bar
 */
 
-let body = document.querySelector('body');
-
 let menu_bar = document.createElement('div');
-body.appendChild(menu_bar);
+menu_bar.setAttribute('class','menu-bar');
+header.appendChild(menu_bar);
 
 let home_button = document.createElement('button');
 let menu_button = document.createElement('button');
@@ -31,9 +45,9 @@ menu_bar.appendChild(menu_button);
 menu_bar.appendChild(contact_button);
 
 /*
-* content
+* main content
 */
 
 let content = document.createElement('div');
-content.setAttribute('class','content-container')
+content.setAttribute('class','main-content')
 body.appendChild(content);
