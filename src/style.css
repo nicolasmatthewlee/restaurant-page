@@ -54,11 +54,11 @@ body {
     border: none;
 }
 
-.menu-bar>button:hover, .overflow-menu-button-open:hover {
+.menu-bar>button:hover {
     color: rgb(180, 0, 0);
 }
 
-.menu-bar>button:active, .overflow-menu-button-open:active {
+.menu-bar>button:active {
     color: darkred;
 }
 
@@ -74,12 +74,14 @@ body {
     height: 50px;
     width: 50px;
 
-    font-size: 40px;
-    font-weight: 800;
-    color: white;
-
-    background-color: red;
     border: none;
+    background: none;
+
+    filter: invert(100%) sepia(6%) saturate(7423%) hue-rotate(214deg) brightness(107%) contrast(118%);
+}
+
+.overflow-menu-button-open:hover {
+    filter: invert(10%) sepia(78%) saturate(4402%) hue-rotate(354deg) brightness(94%) contrast(116%);
 }
 
 .overflow-menu-button-close {

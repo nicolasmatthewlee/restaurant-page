@@ -55,7 +55,7 @@ menu_bar.appendChild(contact_button);
 */
 
 let overflow_menu = document.createElement('div');
-overflow_menu.setAttribute('class','overflow-menu')
+overflow_menu.setAttribute('class','overflow-menu');
 header.appendChild(overflow_menu);
 
 let overflow_menu_button_open = document.createElement('button');
