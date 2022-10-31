@@ -106,3 +106,7 @@ overflow_menu.appendChild(overflow_menu_button_contact);
 let content = document.createElement('div');
 content.setAttribute('class','main-content')
 body.appendChild(content);
+
+// !!! for development DELETE AFTERWARDS !!!!
+
+display_menu();
