@@ -15,13 +15,13 @@ let display_menu = () => {
         'Mushroom Burger':'Sautéed mushrooms, two slices of Swiss cheese, lettuce, and tomato.'
         },
         'Shakes':{
-            'Vanilla Milkshake':'vanilla',
-            'Chocolate Milkshake':'chocolate',
-            'Strawberry Milkshake':'strawberry',
+            'Vanilla Milkshake':'Vanilla',
+            'Chocolate Milkshake':'Chocolate',
+            'Strawberry Milkshake':'Strawberry',
         },
         'Sides':{
-            'Fries':'large, medium, small',
-            'Onion rings':'large, medium, small'
+            'Fries':'Large, medium, or small.',
+            'Onion rings':'Large, medium, or small.'
         }
     }
 
