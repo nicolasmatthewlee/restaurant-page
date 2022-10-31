@@ -157,10 +157,8 @@ body {
 }
 
 .tagline {
-    position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
-    color: white;
 }
 
 .home-content {

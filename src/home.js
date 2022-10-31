@@ -9,15 +9,15 @@ let display_home = () => {
     let home_page = document.createElement('div');
     home_page.setAttribute('class','home-page');
 
-    let diner_image = new Image();
-    diner_image.setAttribute('class','diner-image');
-    diner_image.src = DINER_IMAGE;
-    home_page.appendChild(diner_image);
-
     let tagline = document.createElement('div');
     tagline.setAttribute('class','tagline');
     tagline.textContent='Serving only the best, since 1947'
     home_page.appendChild(tagline);
+
+    let diner_image = new Image();
+    diner_image.setAttribute('class','diner-image');
+    diner_image.src = DINER_IMAGE;
+    home_page.appendChild(diner_image);
 
     let home_content = document.createElement('div');
     home_content.setAttribute('class','home-content');
