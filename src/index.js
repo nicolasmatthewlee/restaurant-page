@@ -107,6 +107,5 @@ let content = document.createElement('div');
 content.setAttribute('class','main-content')
 body.appendChild(content);
 
-// !!! for development DELETE AFTERWARDS !!!!
-
-display_menu();
+// display home page
+display_home()

@@ -148,14 +148,69 @@ body {
 }
 
 /*
-* main content
+* home page
 */
+
+.diner-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tagline {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.home-content {
+    display: flex;
+    padding: 10px;
+}
+
+/*
+* hours
+*/
+
+.hours-container {
+    flex: 1;
+}
+
+.hours-title , .address-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hours-item {
+    display: flex;
+}
+
+.hours-item>.day {
+    flex: 1;
+}
+
+.hours-item>.day:after {
+    content: ':';
+}
+
+.hours-item>.hours {
+    flex: 1;
+}
+
+/* 
+* address
+*/ 
+
+.address-container {
+    flex: 1;
+}
 
 /*
 * menu page
 */
 
-.menu-page {
+.menu-page , .home-page {
     --margin: 20px;
     
     height: calc(100vh - 100px - 2 * var(--margin));
