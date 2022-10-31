@@ -78,7 +78,7 @@ let display_home = () => {
 
     let address = document.createElement('div');
     address.setAttribute('class','address');
-    address.textContent='1670 Rockefeller St. New York, NY 10004'
+    address.textContent='1670 Rockefeller St. New York, NY 10004';
     address_container.appendChild(address);
 
     /*

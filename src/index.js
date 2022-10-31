@@ -108,4 +108,4 @@ content.setAttribute('class','main-content')
 body.appendChild(content);
 
 // display home page
-display_home()
+display_contact()
