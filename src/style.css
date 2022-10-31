@@ -265,7 +265,7 @@ body {
     font-weight: 600;
 }
 
-.phone-container, .address-container {
+.contact-page>.phone-container, .contact-page>.address-container {
     display: flex;
     font-size: 30px;
     font-weight: 600;
