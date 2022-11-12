@@ -70,14 +70,17 @@ overflow_menu.appendChild(overflow_menu_button_close);
 
 let overflow_menu_button_home = document.createElement('button');
 let overflow_menu_button_menu = document.createElement('button');
+let overflow_menu_button_about = document.createElement('button');
 let overflow_menu_button_contact = document.createElement('button');
 
 overflow_menu_button_home.setAttribute('class','overflow-menu-button-home');
 overflow_menu_button_menu.setAttribute('class','overflow-menu-button-menu');
+overflow_menu_button_about.setAttribute('class','overflow-menu-button-about');
 overflow_menu_button_contact.setAttribute('class','overflow-menu-button-contact');
 
 overflow_menu_button_home.textContent='home';
 overflow_menu_button_menu.textContent='menu';
+overflow_menu_button_about.textContent='about';
 overflow_menu_button_contact.textContent='contact';
 
 overflow_menu_button_home.addEventListener('click',() => {
@@ -86,12 +89,16 @@ overflow_menu_button_home.addEventListener('click',() => {
 overflow_menu_button_menu.addEventListener('click',() => {
     overflow_menu.classList.remove('active');
     display_menu();});
+overflow_menu_button_about.addEventListener('click',() => {
+    overflow_menu.classList.remove('active');
+    display_about();});    
 overflow_menu_button_contact.addEventListener('click',() => {
     overflow_menu.classList.remove('active');
     display_contact();});
 
 overflow_menu.appendChild(overflow_menu_button_home);
 overflow_menu.appendChild(overflow_menu_button_menu);
+overflow_menu.appendChild(overflow_menu_button_about);
 overflow_menu.appendChild(overflow_menu_button_contact);
 
 /*

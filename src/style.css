@@ -132,7 +132,7 @@ button {
     visibility: visible;
 }
 
-.overflow-menu-button-home, .overflow-menu-button-menu, .overflow-menu-button-contact {
+.overflow-menu-button-home, .overflow-menu-button-menu, .overflow-menu-button-contact, .overflow-menu-button-about {
     height: 50px;
     
     font-size: 20px;
@@ -144,12 +144,12 @@ button {
     padding-left: 20px;
 }
 
-.overflow-menu-button-home:hover, .overflow-menu-button-menu:hover, .overflow-menu-button-contact:hover {
+.overflow-menu-button-home:hover, .overflow-menu-button-menu:hover, .overflow-menu-button-contact:hover, .overflow-menu-button-about:hover {
     background-color: var(--red);
     color: white;
 }
 
-.overflow-menu-button-home:active, .overflow-menu-button-menu:active, .overflow-menu-button-contact:active {
+.overflow-menu-button-home:active, .overflow-menu-button-menu:active, .overflow-menu-button-contact:active, .overflow-menu-button-about:active {
     background-color: darkred;
 }
 
