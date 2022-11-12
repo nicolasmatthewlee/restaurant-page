@@ -105,4 +105,4 @@ content.setAttribute('class','main-content');
 content_area.appendChild(content);
 
 // display home page
-adisplay_home()
+display_home()

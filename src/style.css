@@ -169,6 +169,32 @@ button {
 
     background-size: var(--square-size) var(--square-size);
     background-position: 0 0, 0 calc(var(--square-size) / 2), calc(var(--square-size) / 2) calc(var(--square-size) / -2), calc(var(--square-size) / -2) 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*
+* pages
+*/
+
+.menu-page , .home-page , .contact-page {
+    --margin: 20px;
+    
+    height: calc(100vh - 100px - 2 * var(--margin));
+    width: min(80vw,700px);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: var(--margin);
+    border: 10px solid white;
+    gap: 10px;
+
+    display: grid;
+
+    background-color: white;
+    overflow: scroll;
+
+    box-shadow: 15px 15px var(--red);
 }
 
 /*
@@ -231,22 +257,6 @@ button {
 /*
 * menu page
 */
-
-.menu-page , .home-page , .contact-page {
-    --margin: 20px;
-    
-    height: calc(100vh - 100px - 2 * var(--margin));
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin: var(--margin);
-    border: 10px solid white;
-    gap: 10px;
-
-    display: grid;
-
-    background-color: white;
-    overflow: scroll;
-}
 
 .menu-page>.category-container {
     border-radius: 10px;
