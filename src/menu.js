@@ -7,6 +7,12 @@ let display_menu = () => {
     let menu_page = document.createElement('div');
     menu_page.setAttribute('class','menu-page');
 
+    let content_fieldset = document.createElement('fieldset');
+    menu_page.appendChild(content_fieldset);
+    let content_title = document.createElement('legend');
+    content_title.textContent='Rockefeller\'s Diner';
+    content_fieldset.appendChild(content_title);
+
     let menu_items = {
         'Burgers':{
         'Classic Hamburger':'An american classic, topped with two slices of American cheese, lettuce, and tomato.',
@@ -15,9 +21,9 @@ let display_menu = () => {
         'Mushroom Burger':'Sautéed mushrooms, two slices of Swiss cheese, lettuce, and tomato.'
         },
         'Shakes':{
-            'Vanilla Milkshake':'Vanilla',
-            'Chocolate Milkshake':'Chocolate',
-            'Strawberry Milkshake':'Strawberry',
+            'Vanilla Milkshake':'Creamy vanilla shake with whipped cream and hot fudge.',
+            'Chocolate Milkshake':'Rich milk chocolate shake with whipped cream.',
+            'Strawberry Milkshake':'Sweet strawberry milkshake with whipped cream and fresh strawberries.',
         },
         'Sides':{
             'Fries':'Large, medium, or small.',
@@ -29,7 +35,7 @@ let display_menu = () => {
 
         let category_container = document.createElement('div');
         category_container.setAttribute('class','category-container');
-        menu_page.appendChild(category_container);
+        content_fieldset.appendChild(category_container);
 
         let category_title = document.createElement('div');
         category_title.setAttribute('class','category-title');

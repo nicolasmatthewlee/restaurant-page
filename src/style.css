@@ -299,13 +299,17 @@ fieldset>legend {
 * menu page
 */
 
-.menu-page>.category-container {
+.menu-page>fieldset>.category-container {
     border-radius: 10px;
-    background-color: whitesmoke;
     padding: 10px;
+    margin: 20px min(40px,5vw) 0px min(40px,5vw);
 }
 
-.menu-page>.category-container>.category-title {
+.menu-page>fieldset>.category-container:last-of-type {
+    margin-bottom: 20px;
+}
+
+.menu-page>fieldset>.category-container>.category-title {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
