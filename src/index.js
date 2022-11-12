@@ -6,6 +6,7 @@ import MENU_ICON from './menu.svg'
 import { display_menu } from './menu';
 import { display_contact } from './contact';
 import { display_home } from './home';
+import { display_about } from './about';
 
 let body = document.querySelector('body');
 
@@ -35,6 +36,7 @@ header.appendChild(company_name);
 
 let about_button = document.createElement('button');
 about_button.textContent='About';
+about_button.addEventListener('click',display_about);
 header.appendChild(about_button);
 
 let contact_button = document.createElement('button');
@@ -105,4 +107,4 @@ content.setAttribute('class','main-content');
 content_area.appendChild(content);
 
 // display home page
-display_home();
+display_about();

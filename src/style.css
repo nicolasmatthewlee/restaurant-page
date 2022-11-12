@@ -182,7 +182,7 @@ button {
 * pages
 */
 
-.menu-page , .home-page , .contact-page {
+.menu-page , .home-page , .contact-page , .about-page {
     --margin: 20px;
     padding: 10px;
     
@@ -329,6 +329,24 @@ fieldset>legend {
 
 .item-name {
     font-weight: 600;
+}
+
+/*
+* about page
+*/
+
+.about-title {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 40px 0px 40px;
+}
+
+.about-text {
+    padding: 10px;
+    margin: 0px min(40px,5vw) 20px min(40px,5vw);
+    font-weight: 500;
+    font-size: 20px;
 }
 
 /*
