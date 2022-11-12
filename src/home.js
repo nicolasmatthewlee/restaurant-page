@@ -1,5 +1,3 @@
-import DINER_IMAGE from './diner.jpg'
-
 let display_home = () => {
     
     /*
@@ -13,11 +11,6 @@ let display_home = () => {
     tagline.setAttribute('class','tagline');
     tagline.textContent='Serving only the best, since 1947'
     home_page.appendChild(tagline);
-
-    let diner_image = new Image();
-    diner_image.setAttribute('class','diner-image');
-    diner_image.src = DINER_IMAGE;
-    home_page.appendChild(diner_image);
 
     let home_content = document.createElement('div');
     home_content.setAttribute('class','home-content');

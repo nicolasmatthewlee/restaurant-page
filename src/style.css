@@ -152,6 +152,26 @@ button {
 }
 
 /*
+* main content
+*/ 
+
+.content-area {
+    width: 100vw;
+    height: calc(100vh - 100px);
+
+    background-image: 
+    linear-gradient(45deg, black 25%, transparent 25%),
+    linear-gradient(-45deg, black 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, black 75%),
+    linear-gradient(-45deg, transparent 75%, black 75%);
+
+    --square-size: 60px;
+
+    background-size: var(--square-size) var(--square-size);
+    background-position: 0 0, 0 calc(var(--square-size) / 2), calc(var(--square-size) / 2) calc(var(--square-size) / -2), calc(var(--square-size) / -2) 0px;
+}
+
+/*
 * home page
 */
 

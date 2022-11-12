@@ -96,9 +96,13 @@ overflow_menu.appendChild(overflow_menu_button_contact);
 * main content
 */
 
+let content_area = document.createElement('div');
+content_area.setAttribute('class','content-area');
+body.appendChild(content_area);
+
 let content = document.createElement('div');
-content.setAttribute('class','main-content')
-body.appendChild(content);
+content.setAttribute('class','main-content');
+content_area.appendChild(content);
 
 // display home page
-display_home()
+adisplay_home()
