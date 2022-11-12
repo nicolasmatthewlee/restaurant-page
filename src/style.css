@@ -2,6 +2,7 @@
 
 :root {
     --red: #FF3D00;
+    --black: rgb(30,30,30);
     overscroll-behavior-y: none;
 }
 
@@ -49,7 +50,7 @@ button {
 
     font-size: 30px;
     font-weight: 600;
-    color: black;
+    color: var(--black);
 
     background-color: white;
     border: none;
@@ -163,10 +164,10 @@ button {
     min-height: calc(100vh - 100px);
 
     background-image: 
-    linear-gradient(45deg, black 25%, transparent 25%),
-    linear-gradient(-45deg, black 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, black 75%),
-    linear-gradient(-45deg, transparent 75%, black 75%);
+    linear-gradient(45deg, var(--black) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--black) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--black) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--black) 75%);
 
     --square-size: 60px;
 
@@ -183,6 +184,8 @@ button {
 
 .menu-page , .home-page , .contact-page {
     --margin: 20px;
+
+    padding: 10px;
     
     width: min(80vw,700px);
     box-sizing: border-box;
