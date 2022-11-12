@@ -17,38 +17,31 @@ let header = document.createElement('div');
 header.setAttribute('class','header')
 body.appendChild(header);
 
+let home_button = document.createElement('button');
+home_button.textContent='Home';
+home_button.addEventListener('click',display_home);
+header.appendChild(home_button);
+
+let menu_button = document.createElement('button');
+menu_button.textContent='Menu';
+menu_button.addEventListener('click',display_menu);
+header.appendChild(menu_button);
+
 let company_name = document.createElement('div');
 company_name.setAttribute('class','company-name');
 company_name.textContent='Rockefeller\'s Diner';
+company_name.addEventListener('click',display_home);
 header.appendChild(company_name);
 
-let header_spacer = document.createElement('div');
-header_spacer.setAttribute('class','header-spacer');
-header.appendChild(header_spacer);
+let about_button = document.createElement('button');
+about_button.textContent='About';
+header.appendChild(about_button);
 
-/*
-* menu bar
-*/
-
-let menu_bar = document.createElement('div');
-menu_bar.setAttribute('class','menu-bar');
-header.appendChild(menu_bar);
-
-let home_button = document.createElement('button');
-let menu_button = document.createElement('button');
 let contact_button = document.createElement('button');
-
-home_button.textContent='home';
-menu_button.textContent='menu';
-contact_button.textContent='contact';
-
-home_button.addEventListener('click',display_home);
-menu_button.addEventListener('click',display_menu);
+contact_button.setAttribute('class','header-contact-button')
+contact_button.textContent='Contact';
 contact_button.addEventListener('click',display_contact);
-
-menu_bar.appendChild(home_button);
-menu_bar.appendChild(menu_button);
-menu_bar.appendChild(contact_button);
+header.appendChild(contact_button);
 
 /*
 * overflow menu
