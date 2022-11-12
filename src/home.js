@@ -1,3 +1,5 @@
+import MAIN_IMAGE from './CoffeeDoddle.svg';
+
 let display_home = () => {
     
     /*
@@ -7,14 +9,25 @@ let display_home = () => {
     let home_page = document.createElement('div');
     home_page.setAttribute('class','home-page');
 
+    let content_fieldset = document.createElement('fieldset');
+    home_page.appendChild(content_fieldset);
+    let content_title = document.createElement('legend');
+    content_title.textContent='Rockefeller\'s Diner';
+    content_fieldset.appendChild(content_title);
+
+    let diner_image = new Image();
+    diner_image.setAttribute('class','main-image');
+    diner_image.src = MAIN_IMAGE;
+    content_fieldset.appendChild(diner_image);
+
     let tagline = document.createElement('div');
     tagline.setAttribute('class','tagline');
-    tagline.textContent='Serving only the best, since 1947'
-    home_page.appendChild(tagline);
+    tagline.textContent='New York\'s Favorite Diner, since 1947'
+    content_fieldset.appendChild(tagline);
 
     let home_content = document.createElement('div');
     home_content.setAttribute('class','home-content');
-    home_page.appendChild(home_content);
+    content_fieldset.appendChild(home_content);
 
     /*
     * hours

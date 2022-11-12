@@ -2,6 +2,7 @@
 
 :root {
     --red: #FF3D00;
+    overscroll-behavior-y: none;
 }
 
 body {
@@ -157,7 +158,9 @@ button {
 
 .content-area {
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: clamp(100vh,100%,100%);
+
+    min-height: calc(100vh - 100px);
 
     background-image: 
     linear-gradient(45deg, black 25%, transparent 25%),
@@ -181,7 +184,6 @@ button {
 .menu-page , .home-page , .contact-page {
     --margin: 20px;
     
-    height: calc(100vh - 100px - 2 * var(--margin));
     width: min(80vw,700px);
     box-sizing: border-box;
     border-radius: 20px;
@@ -192,46 +194,78 @@ button {
     display: grid;
 
     background-color: white;
-    overflow: scroll;
 
     box-shadow: 15px 15px var(--red);
+
+    margin-bottom: 50px;
 }
 
 /*
 * home page
 */
 
-.diner-image {
-    width: 100%;
-    border-radius: 10px;
+.home-page>fieldset {
+    margin: 5px;
+    margin-top: 0px;
+    border: 5px solid var(--red);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page>fieldset>legend {
+    margin-left: 20px;
+    padding: 0 10px 0 10px;
+
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--red);
+}
+
+.main-image {
+    margin-top: 20px;
+    margin-left: min(70px,7vw);
+    width: 80%;
 }
 
 .tagline {
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    align-self: center;
+    color: var(--red);
 }
 
 .home-content {
     display: flex;
     padding: 10px;
+    margin: 20px min(40px,5vw) 20px min(40px,5vw);
+    /* top right bottom left */
+
+    gap: 15px;
 }
 
 /*
 * hours
 */
 
-.hours-container {
+.home-content>.hours-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .hours-title , .address-title {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
-.hours-item {
+.hours-item , .address-container>.address {
     display: flex;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .hours-item>.day {
@@ -252,6 +286,10 @@ button {
 
 .address-container {
     flex: 1;
+}
+
+.address-container>.address {
+    margin-top: 10px;
 }
 
 /*
