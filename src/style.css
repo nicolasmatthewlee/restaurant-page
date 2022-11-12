@@ -184,7 +184,6 @@ button {
 
 .menu-page , .home-page , .contact-page {
     --margin: 20px;
-
     padding: 10px;
     
     width: min(80vw,700px);
@@ -267,12 +266,13 @@ fieldset>legend {
 
 .hours-item , .address-container>.address {
     display: flex;
-    font-size: 20px;
+    font-size: min(3.5vw,20px);
     font-weight: 500;
 }
 
 .hours-item>.day {
     flex: 1;
+    margin-right: 5px;
 }
 
 .hours-item>.day:after {
