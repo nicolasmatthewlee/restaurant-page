@@ -107,4 +107,4 @@ content.setAttribute('class','main-content');
 content_area.appendChild(content);
 
 // display home page
-display_about();
+display_contact();

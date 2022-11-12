@@ -354,6 +354,8 @@ fieldset>legend {
 */
 
 .page-title {
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 30px;
     font-weight: 600;
     margin: 20px 40px 0px 40px;
